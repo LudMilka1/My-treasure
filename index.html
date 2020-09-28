@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="HTML, CSS, JavaScript">
+	<meta name="description" content="My experience">
+	<meta name="author" content="LudMilka">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> My treasure </title>
+
+<style>
+	* {
+		box-sizing: border-box;
+	}
+
+	body {
+		font-family: Arial, Helvetica, sans-serif;
+	}
+
+	header {
+		background-color: lightpink;
+		padding: 15px;
+		text-align: center;
+		font-size: 30px;
+		color: brown;
+	}
+
+	nav {
+		float: left;
+		width: 20%;
+		padding: 2px;
+	}
+
+	nav ul {
+		list-style-type: circle;
+	}
+
+	article {
+		float: left;
+		width: 80%;
+	}
+
+	section:after {
+	content: "";
+	display: table;
+	clear: both;
+	}
+
+	#aside_1 {
+		width: 30%;
+		background-color: darkslateblue;
+		padding-left: 15px;
+		margin-left: 15px;
+		float: right;
+		font-style: italic;
+		color: wheat;
+	}
+
+	footer {
+		background-color: pink;
+		padding: 15px;
+		text-align: center;
+		color: teal;
+	}
+
+	h2 { 
+	color:brown; 
+	border:2px solid lightpink; 
+	padding: 10px}
+		
+	p {
+		color: darkgreen; 
+		margin: 15px;
+	}
+
+	table, img, address, link, button, ul, ol {
+		margin: 10px;
+	}
+
+	.city {
+		background-image: url('./images/clouds.jpg');
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: cover;
+	}
+
+	.city_1 {
+		background-image: url('./images/sunset.jpg');
+		background-size: 20%;
+		color: white;
+	}
+
+	.city_2 {
+		background-image: url('./images/abstract.jpg');
+		color: wheat;
+	}
+
+	.city_3 {
+		background-image: url('./images/meow.jpg');
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: cover;
+	}
+
+	.city_4 {
+		background-color: #ffff66;
+	}
+
+	.note {
+		background-color: cornsilk;
+	}
+
+	.main {
+		text-align: center;
+	}
+
+	a:link {
+		color: darkgreen;
+		background-color: transparent;
+		text-decoration: none;
+	}
+
+	a:visited {
+		color: indigo;
+		background-color: transparent;
+		text-decoration: none;
+	}
+
+	a:hover {
+		color: red;
+		background-color: transparent;
+		text-decoration: underline;
+	}
+
+	a:active {
+		color: yellow;
+		background-color: transparent;
+		text-decoration: underline;
+	}	
+
+	table {
+		border-collapse: collapse;
+		width: 50%;
+	}
+
+	td, th {
+		border: 1px solid #dddddd;
+		text-align: center;
+		padding: 8px;
+	}
+
+	#t01 tr:nth-child(even) {
+		background-color: #ffebcd;
+	}
+
+	#t01 tr:nth-child(odd) {
+		background-color: #f0ffff;
+	}
+
+	#t01 th {
+		background-color: darksalmon;
+		color: indigo;
+	}	
+
+	#p01 {
+		font-size:130%;
+	}
+
+	#Index {
+		list-style-type: circle;
+		
+		overflow: hidden;
+		background-color: pink;
+	}
+
+	#li01 {
+		float: left;
+		list-style-type: none;
+		color: white;
+		padding: 10px;
+	}
+
+	#p_2 {
+		color: wheat;
+	}
+
+	li a {
+		display: block;
+		color: white;
+		text-align: center;
+		padding: 16px;
+		text-decoration: none;
+	}
+
+	li a:hover {
+		background-color: #111111;
+	}
+
+	#shape_shifter {
+		color: firebrick;
+	} 
+</style>
+</head>
+<body>
+
+<header>
+	<h2> My treasure </h2>
+</header>
+
+<section>
+	<nav>
+		<ul id="Index">
+			<li> 
+				<a href="#Links"> Links </a>  
+			</li>
+
+			<li> 
+				<a href="#Images"> Images </a>
+			</li>
+
+			<li> 
+				<a href="#Text_Formatting"> Text Formatting </a>
+			</li>
+
+			<li> 
+				<a href="#QaCe"> Quotation and Citation elements </a>  
+			</li>
+
+			<li> 
+				<a href="#Colors"> Colors </a> 
+			</li>
+
+			<li> 
+				<a href="#Tables"> Tables </a>  
+			</li>
+
+			<li> 
+				<a href="#Lists"> Lists </a>  
+			</li>
+
+			<li> 
+				<a href="#Iframe"> Iframe </a> 
+			</li>
+
+			<li> 
+				<a href="#Computercode"> Computercode </a> 
+			</li>
+
+			<li> 
+				<a href="#Symbols and Emojis"> Symbols and Emojis</a> 
+			</li>
+
+			<li> 
+				<a href="#Forms"> Forms </a> 
+			</li>
+		</ul>
+	</nav>
+
+<article>
+<div class="city_1">
+	<h2 id="Links" class="note main"> Links </h2>
+
+	<p> 
+	<pre>
+	<a href="https://www.youtube.com" target="_self"> 
+
+	<img src="./images/yt.jpg" alt="YouTube" style="width:160px;height:100px;"> 
+	</a>
+
+	<a href="https://www.lingvolive.com/ru-ru" target="_blank" style="color: white" title="I'm a tooltip"> Lingvo Life 
+	</a>
+
+	<a href="https://simple.wikipedia.org/wiki/Main_Page" style="color: white"target="_parent"> Wikipedia 
+	</a>
+
+	<a href="https://trends.google.ru/trends/?geo=RU" style="color: white"target="_top"> Google Trends 
+	</a> 
+
+	<button onclick="document.location='https://www.lingvolive.com/ru-ru'"> Lingvo Life </button>
+	</pre> 
+	</p>
+</div>
+
+<div class="city">
+
+	<h2 id="Images"class="note main"> Images </h2>
+
+		<picture>
+			<source media="(min-width: 650px)" srcset="./images/camonile.gif">
+			<source media="(min-width: 465px)" srcset="./images/camonile.jpg">
+			<img src="./images/camonile.jpg" alt="Camonile" style="width:300px;height: 200px;">
+		</picture>
+
+		<br>
+
+		<figure>
+			<img src="./images/the-scream.jpg" alt="The Scream" style="width:160px;height:200px;"> 
+			<figcaption>
+				<cite> The Scream </cite> by Edvard Munch. Painted in 1893 
+			</figcaption>	
+		</figure>
+
+		<br>
+
+		<img src="./images/space.gif" alt="Space" style="width: 150px; height: 150px;">
+
+		<br>
+
+		<p>
+		Click on the sun below!
+		</p>
+
+		<img src="./images/sun.jpg" alt="Sunset" usemap="#sun.jpg" style="width: 150px; height: 150px">
+
+		<map name="sun.jpg">
+			<area shape="circle" coords="45, 105, 7" onclick="Warning()">
+		</map>
+
+		<script>
+			function Warning() {
+				alert("Smile!")
+			}
+		</script>
+
+		<br>
+
+		<script>
+			function light(sw) {
+				var pic;
+				if (sw == 0) {
+					pic = "./images/off.jpg"
+				} else {
+					pic = "./images/on.jpg"
+				}
+			document.getElementById ("myImage").src = pic;
+			}
+		</script>
+
+		<img id="myImage" src="./images/off.jpg" alt="The lights are out" style="width:150px; height:150px;">
+
+		<p>
+			<button type="button" onclick="light(1)"> Light on </button>
+			<button type="button" onclick="light(0)"> Light off </button>
+		</p>
+</div>
+
+<div class="city_2">
+	<h2 id="Text_Formatting" class="note main"> Text Formatting </h2>
+
+		<aside>
+			<p id="aside_1">
+				The Epcot center is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.
+			</p>
+		</aside>
+
+		<p id="p_2"> 
+			<b> This text is bold. </b> <br>
+			<br>
+			<strong> This text is important! </strong> <br>
+			<br>
+			<em> This text is emphasized. </em> <br>
+			<br>
+			<i> This text is italic. </i> <br>
+			<br>
+			This is <sub> subscripted </sub> text. <br>
+			<br> 
+			<small> This is some smaller text. </small> <br>
+			<br>
+			This is <sup> superscripted </sup> text. <br>
+			<br>
+			<img src="./images/left.jpg" alt="Music art" style="float:left; width: 150px; height: 75px;">
+ 			This is a paragraph <br> with <mark> a line break. </mark> <br>
+ 			<br>
+ 			My favorite color is <del> blue </del> <ins> pink. </ins> <br>
+ 			<br>
+ 			<abbr title = "World Health Organization"> WHO </abbr> was founded in 1948. <br>
+ 			<br>
+ 			<address>  
+			Written by Jone Doe. <br>
+			Visit us at: <br>
+			<a href="mailto:someone@example.com"> Send message </a> <br>
+			Box 564, DisneyLand <br>
+			USA <br>
+			</address>
+			<p id="shape_shifter"> 
+				<bdo dir="rtl"> This is the firebrick paragraph. </bdo> <br>
+			</p>
+		</p>
+
+		<script>
+			function Change_text() {
+				document.getElementById("shape_shifter").style.fontSize = "25px";
+				document.getElementById("shape_shifter").style.color = "orangered";
+				document.getElementById("shape_shifter").innerHTML = "I am not a shape-shifter!!!";
+			}
+		</script>
+
+		<noscript> Sorry, your browser does not support JavaScript! </noscript>
+
+		<button type="button" onclick="Change_text()"> Click me! </button>
+</div>
+
+<div class="city_3">
+	<h2 id="QaCe" class="note main"> Quotation and Citation elements </h2>
+
+		<blockquote cite = "https://simple.wikipedia.org/wiki/Basic_English"> Basic English (Business Academic Scientific International Commercial) is a controlled language used to explain complex thoughts. It has 850 basic English words chosen by Charles Kay Ogden. Some articles in the Simple English Wikipedia use only Basic English. 
+		</blockquote>	
+
+		<p>
+		Walt Disney said: <q>The way to get started is to quit talking and begin doing.</q>
+		</p>
+</div>
+
+	<h2 id="Colors" class="note main"> Colors </h2>
+
+		<p style="background-color: rgb(255, 99, 71);"> RGB. Same is color name "Tomato". </p>
+
+		<p style="background-color: rgba(255, 99, 71, 0.5);"> RGBA. Same is color name "Tomato", but 50% transparency. </p>
+
+		<p style="background-color: #ff6347;"> #ff6347. Tomato. </p>
+
+		<p style="background-color: hsl(9, 100%, 64%);"> HSL. Tomato. </p>
+
+		<p style="background-color: hsla(9, 100%, 64%, 0.5);"> HSL. Tomato. 50% transparency. </p>
+
+<div class="city_4">
+
+	<h2 id="Tables" class="note main"> Tables </h2>
+
+		<table id="t01"; style="width: 50%">
+			<caption> Calorie content </caption>
+
+			<tr>
+				<th> Frute (100 g) </th>
+				<th> Calories </th>
+				<th> Protein </th>
+				<th> Fat </th>
+				<th> Carbs </th>
+			</tr>
+
+			<tr>
+				<td> <img src="./images/bananas.jpg" alt="Bananas" style="width: 150px; height: 130px;"> </td>
+				<td> 100 </td>
+				<td> 1,2 </td>
+				<td> 0,3 </td>
+				<td> 23,2 </td>
+			</tr>
+		</table>
+
+		<br>
+
+		<table>
+			<caption> Notebook </caption>
+
+			<tr>
+				<th> Name </th>
+					<td colspan="2"> Bill </td>
+			</tr>
+
+			<tr>
+				<th rowspan="2"> Telephone </th>
+					<td> 777 </td>
+			</tr>
+
+			<tr>
+				<td> 999 </td>
+			</tr>
+		</table>
+
+	<h2 id="Lists" class="note main"> Lists </h2>
+
+		<dl>
+			<dt> Coffee </dt>
+				<dd> <span style="background-color: black; color: white;">- black </span> hot drink; </dd>
+			<dt> Milk </dt>
+				<dd> <span class="note"> - white </span> cold drink. </dd>
+		</dl>
+
+		<ul>
+			<li id="li01"> <a href="#home"> Home </a> </li>
+			<li id="li01"> <a href="#news"> News </a> </li>
+			<li id="li01"> <a href="#contact"> Contact </a> </li>
+			<li id="li01"> <a href="#about"> About </a> </li>
+		</ul> <br> <br> <br>
+
+		<br>
+
+		<ol start="7">
+			<li> Coffee </li>
+			<li> Tea </li>
+			<li> Milk </li>
+		</ol>
+
+	<h2 id="Iframe" class="note main"> Iframe </h2>
+
+		<iframe src="https://simple.wikipedia.org/wiki/Basic_English" name="Wikipedia" style="border:1px solid brown; height:300px; width:900px;" title="Wikipedia"> Wikipedia </iframe>
+
+	<h2 id="Computercode" class="note main"> Computercode </h2>
+
+		<code> 
+		x = 5; <br>
+		y = 6; <br>
+		z = x + y;
+		</code>
+
+		<p> Save the document by pressing <kbd> Ctrl + S </kbd> </p>
+
+		<p>
+		Message from my computer: <br>
+		<samp> File not found. Press F1 to continue. </samp>
+		</p>
+
+		The area of a triangle is: 0,5 x <var> b </var> x <var> h. </var>
+
+	<h2 id="Symbols and Emojis" class="note main"> Symbols and Emojis </h2>
+
+		<span style="font-size: 100px;">&#9748; &#127861; &#9925; &#9775; &#8634; &#128151; &#127826;</span>
+
+	<h2 id="Forms" class="note main"> Forms </h2>
+
+		<form action="#" target="_blank">
+			<label for="fname"> First name: </label> <br/>
+			<input type="text" id="fname" name="fname" value="LudMilka"> <br/>
+			<label for="lname"> Last name: </label> <br/>
+			<input type="text" id="lname" name="lname" value="LudMilka"> <br/>
+			<input type="submit" name="Submit">
+		</form> <br/>
+
+		<form action="#">
+			<input type="radio" id="male" name="gender" value="Male"> 
+			<label for="male"> Male </label> <br/>
+			<input type="radio" id="female" name="gender" value="Female"> 
+			<label for="male"> Female </label> <br/>
+			<input type="radio" id="other" name="gender" value="Other"> 
+			<label for="other"> Other </label> <br/>
+			<input type="submit" name="Submit"> <br/>
+		</form> <br/>
+
+		<form action="#">
+			<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+			<label for="vehicle1"> I have a bike </label> <br/>
+			<input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+			<label for="vehicle2"> I have a car </label> <br/>
+			<input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+			<label for="vehicle3"> I have a boat </label> <br/>
+			<input type="submit" name="Submit"> <br/>
+		</form>
+
+</div>
+<!-- Remember to add more information here -->
+</article>
+</section>
+
+<footer>
+	<p id="p01"> That's all! </p>
+
+	<button onclick="displayResult()"> Click me! </button>
+
+	<script>
+		function displayResult() {
+			document.getElementById ("p01").innerHTML = "Have a nice day!";
+		}
+	</script>
+</footer>
+
+</body>
+</html>
